@@ -22,5 +22,5 @@ urlpatterns = [
     url(r'^hello/$', hello),
     url(r'^time/$', current_datetime),
     url(r'^time/plus/(\d{1,2})/$', hours_ahead),
-    url(r'^polls/', include('polls.urls')), 
+    url(r'^polls/', include('polls.urls', namespace="polls")), 
 ]
